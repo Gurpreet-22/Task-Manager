@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Managemnet</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Task Manager</h1>
+      <form id="task-form">
+        <label for="task-input">Description</label>
+        <input type="text" id="task-input" required />
+        <label for="dateInput">Due Date</label>
+        <input type="date" id="dateInput" required />
+        <label for="timeInput">Time</label>
+        <input type="time" id="timeInput" required />
+        <select id="priority-input">
+          <option value="low">Lowest</option>
+          <option value="medium">Medium</option>
+          <option value="high">Highest</option>
+        </select>
+        <button type="submit" id="tag">Add Task</button>
+      </form>
+      <ul id="task-list"></ul>
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>
